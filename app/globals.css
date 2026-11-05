@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-[#2B2B2B] antialiased;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-block bg-gold text-white font-semibold px-8 py-3 rounded-full tracking-wide hover:bg-gold-600 transition-colors duration-200;
+  }
+  .btn-outline {
+    @apply inline-block border-2 border-gold text-gold font-semibold px-8 py-3 rounded-full tracking-wide hover:bg-gold hover:text-white transition-colors duration-200;
+  }
+  .section-label {
+    @apply text-gold font-semibold text-sm uppercase tracking-widest;
+  }
+}
